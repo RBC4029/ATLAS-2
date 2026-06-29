@@ -1,0 +1,31 @@
+# Sprint v0.7 — Atlas Ingestion
+
+## Objectif
+Permettre à Atlas de recevoir un dossier complet au lieu d'une simple déclaration texte.
+
+## Nouveaux composants
+- ClaimPackage
+- PackageDocument
+- PackageScanner
+- DocumentClassifier
+- FusionEngine
+- IngestionEngine
+
+## API
+`POST /api/v1/ingestion/analyze-package`
+
+## Exemple de payload
+```json
+{
+  "package_path": "examples/claim_packages/DDE_001",
+  "package_id": "DDE_001",
+  "policy_type": "MRH"
+}
+```
+
+## Valeur
+Atlas peut être branché après :
+- une GED ;
+- un portail client ;
+- une boîte mail ;
+- une API SI.

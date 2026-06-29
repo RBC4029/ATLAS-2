@@ -1,0 +1,14 @@
+# Patch Atlas v0.7 — Ingestion Engine
+
+Ajouts :
+- objet `ClaimPackage`
+- scanner de dossier
+- classification documentaire
+- fusion documentaire vers texte consolidé
+- endpoint `/api/v1/ingestion/analyze-package`
+- exemples de dossiers sinistres
+- tests ingestion
+
+Objectif :
+Atlas ne reçoit plus seulement une déclaration texte.
+Atlas peut recevoir un dossier structuré provenant d’une GED, d’un portail client ou d’un e-mail.
